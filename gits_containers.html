@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Git</title>
+  <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+
+  <style>
+
+  /* Understanding Git's Containers
+   * By: Kira McLean
+   * 2015 */
+
+    body, div, p {
+      color: #333333;
+      padding: 0;
+      margin: 0;
+    }
+
+    .box {
+      border: 2px solid #333333;
+      height: 50px;
+      width: 110px;
+      font-family: Oxygen, Arial, sans-serif;
+      text-align: center;
+      vertical-align: middle;
+      text-transform: uppercase;
+      border-radius: 5px;
+      float: left;
+      padding-top: 10px;
+      margin: 30px;
+    }
+
+    .last-box {
+      padding-top: 18px;
+      height: 42px;
+    }
+
+    .line {
+      border-right: 2px dashed #666666;
+      height: 260px;
+      width: 1px;
+      float: left;
+      margin-top: 30px;
+    }
+
+    .short-arrow {
+      border: 2px solid #444444;
+      width: 170px;
+      position: absolute;
+    }
+
+    .long-arrow {
+      border: 2px solid #444444;
+      width: 340px;
+      position: absolute;
+    }
+
+    .arrowhead-right {
+      width: 100px;
+      height: 0;
+      border-top: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+      border-left: 10px solid #444444;
+      position: absolute;
+
+      left: 164px;
+      top: -10px;
+      z-index: 1;
+    }
+
+    .arrowhead-left {
+      width: 100px;
+      height: 0;
+      border-top: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+      border-right: 10px solid #444444;
+      position: absolute;
+
+      left: -104px;
+      top: -10px;
+      z-index: 1;
+    }
+
+    .label {
+      font-family: Courier, monospace;
+      background-color: white;
+      bottom: 5px;
+      width: 100%;
+      text-align: center;
+      position: absolute;
+    }
+
+    .add {
+      top: 130px;
+      left: 85px;
+    }
+
+    .commit {
+      top: 172px;
+      left: 255px;
+    }
+
+    .soft {
+      top: 219px;
+      left: 255px;
+    }
+
+    .mixed {
+      top: 265px;
+      left: 85px;
+    }
+
+    .reset {
+      background: none;
+      position: absolute;
+      left: 5px
+    }
+
+  </style>
+
+</head>
+<body>
+
+  <div class='box'>Working Directory</div>
+  <div class='line'></div>
+  <div class='box'>Staging Area</div>
+  <div class='line'></div>
+  <div class='box last-box'>Repository</div>
+  <div class='short-arrow add'>
+    <div class='arrowhead-right'></div>
+    <p class='label'>git add</p>
+  </div>
+  <div class='short-arrow commit'>
+    <div class='arrowhead-right'></div>
+    <p class='label'>git commit</p>
+  </div>
+  <div class='short-arrow soft'>
+    <div class='arrowhead-left'></div>
+    <p class='label'>git reset --soft</p>
+  </div>
+  <div class='long-arrow mixed'>
+    <div class='arrowhead-left'></div>
+    <p class='label reset'>git reset --mixed</p>
+  </div>
+
+</body>
+</html>
