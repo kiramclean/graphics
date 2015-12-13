@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Git Reset</title>
+  <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+
+  <style>
+
+    .line {
+      border: 2px solid #333333;
+      width: 600px;
+      position: absolute;
+      top: 50px;
+      left: 50px;
+    }
+
+    .commits {
+      position: absolute;
+      top: 37px;
+      left: 60px;
+    }
+
+    .commit {
+      height: 25px;
+      width: 25px;
+      border: 3px solid #777777;
+      border-radius: 7px;
+      background-color: white;
+      float: left;
+      margin: 0 25px;
+    }
+
+    .last {
+      border-color: #48DBDB;
+    }
+
+    .bracket {
+      position: absolute;
+      top: 30px;
+      left: 482px;
+      width: 350px;
+      font-size: 8em;;
+    }
+
+    p {
+      font-family: Courier, monospace;
+      font-size: 1.2em;
+     }
+
+    .reset {
+      position: absolute;
+      top: 110px;
+      left: 475px;
+    }
+
+    .block{
+      position: relative;
+      top: 112px;
+      left: 573px;
+      padding: 3px 13px;
+      margin: 5px;
+      float: left;
+    }
+
+    .block:before, .block:after{
+      content: '';
+      display: block;
+      height: 100%;
+      width: 15px;
+      border: 5px solid #333;
+      position: absolute;
+      top: -5px;
+    }
+
+    .block:before{ left: 0; border-right: 0; }
+    .block:after{ right: 0; border-left: 0; }
+
+    .pointer {
+      font-size: 3.5em;
+      position: absolute;
+      left: 80px;
+      top: 10px;
+    }
+
+    .message {
+      font-family: 'Oxygen', Arial, sans-serif;
+      position: absolute;
+      top: 65px;
+      left: 140px;
+      width: 120px;
+      color: #48DBDB;
+    }
+
+  </style>
+
+</head>
+<body>
+
+  <div class='line'></div>
+  <div class='commits'>
+    <div class='commit'></div>
+    <div class='commit'></div>
+    <div class='commit'></div>
+    <div class='commit'></div>
+    <div class='commit'></div>
+    <div class='commit last'></div>
+    <div class='commit last'></div>
+  </div>
+  <div class='bracket'>&#xFE38;</div>
+  <p class='reset'>git reset</p>
+  <p class='block'>--soft<br>--mixed<br>--hard</p>
+  <p class='block'>HEAD~2<br>commit ID</p>
+  <p class='pointer'>&#x21B3;</p>
+  <p class='message'>these are your commits</p>
+</body>
+</html>
